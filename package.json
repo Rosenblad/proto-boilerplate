@@ -1,0 +1,22 @@
+{
+  "name": "project name (required)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "http://webbyrankonsulterna.se",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --progress -c -w",
+    "compile": "./node_modules/.bin/webpack --output-filename projectname.js && npm run minify",
+    "minify": "./node_modules/.bin/webpack -p --output-filename projectname.min.js"
+  },
+  "author": "Webbyrån Konsulterna",
+  "email": "info@konsulterna.nu",
+  "dependencies": {
+    "webpack": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "css-loader": "*",
+    "style-loader": "*",
+    "babel-preset-es2015": "*",
+    "extract-text-webpack-plugin": "*",
+  }
+}
